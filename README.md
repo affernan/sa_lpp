@@ -1,7 +1,27 @@
-# International Transactions in Operational Research (Special issue on “OR and Big Data in Agriculture”): 
-# A Mixed Integer Linear Programming Model and a Metaheuristic Approach for the Selection and Allocation of Land Parcels Problem
+# SA-LPP Instances
 
-Authors: Alejandro Fernández Gil, Mariam Gómez Sánchez, Carlos Castro and Alain Pérez-Alonso
+This repository contains benchmark instances for the Selection and Allocation of Land Parcels Problem (SA-LPP).
 
-# Abstract: 
-This article is about the current agricultural scenario, where large-scale production causes large amounts of foodto be transported to various points of consumption, causing substantial emissions of so-called greenhouse gases(GHGs) and increasing the carbon footprint. Land use optimization and land parcel allocation are essential areas of agriculture research that currently represent relevant challenges and classify as combinatorial optimizationproblems. In this context, the Selection and Allocation of Land Parcels Problem (SA-LPP) is proposed; its goal isto optimize the selection and allocation of land parcels in small areas available for food production. We proposea reformulation of the SA-LPP as a variant of the two-dimensional orthogonal packing problem (2OPP), calledGroup-2OPP. This problem was solved through a Mixed Integer Linear Programming (MILP) model, but due tothe model complexity, also we propose a Greedy Randomized Adaptive Search Procedure (GRASP) metaheuristicapproach. Some sensitivity analyses were performed as well to evaluate the impact of parameters on the solutions. Computational results show that the proposed metaheuristic outperforms the MILP model in terms of solutionquality and computational times.
+The instances support the study "A Mixed Integer Linear Programming Model and a Metaheuristic Approach for the Selection and Allocation of Land Parcels Problem", by Alejandro Fernandez Gil, Mariam Gomez Sanchez, Carlos Castro, and Alain Perez-Alonso.
+
+## Problem Context
+
+SA-LPP addresses the selection and allocation of land parcels for food production in small available areas. The problem is motivated by land-use planning, agricultural logistics, and the reduction of transportation-related environmental impact.
+
+The associated work models SA-LPP as a variant of the two-dimensional orthogonal packing problem, named Group-2OPP, and evaluates both mathematical programming and metaheuristic approaches.
+
+## Contents
+
+The repository includes 27 `.dat` instances:
+
+- Sizes from 10 to 50.
+- Three variants per size.
+- Filenames follow the pattern `rnd<size>_<variant>.dat`.
+
+## File Structure
+
+Each instance is a plain-text data file containing numerical parameters for land parcel selection and allocation. The first line provides instance-level parameters, followed by parcel or group data used by optimization models.
+
+## Suggested Use
+
+These files are intended for computational experiments with exact optimization models, constructive heuristics, and metaheuristics for land parcel selection and allocation.
